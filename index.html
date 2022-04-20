@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function footer() {
+        var i;
+        var a = document.getElementById("made-by");
+        a.innerHTML += ":CSE326 CA-1";
+      }
+      function validate1() {
+        if (document.getElementById("name").value == "") {
+          alert("Please provide your name");
+          document.getElementById("name").focus();
+          return false;
+        }
+        if (document.getElementById("email-id").value == "") {
+          alert("Please provide your email");
+          document.getElementById("email-id").focus();
+          return false;
+        }
+        if (
+          document.getElementById("password").value == "" ||
+          document.getElementById("password").value.length <= "6"
+        ) {
+          alert("Please provide a strong password ");
+          document.getElementById("password").focus();
+          return false;
+        }
+        if (
+          document.getElementById("confirm-password").value !=
+          document.getElementById("password").value
+        ) {
+          alert("Passwords doesn't match");
+          return false;
+        }
+        if (document.getElementById("t-c").value == false) {
+          alert("Accept the terms and conditions");
+        }
+      }
+    </script>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Roboto:ital,wght@1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7e020a0d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="calculator.html" target="_blank">Calculator</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="forums.html" target="_blank">Forums</a></li>
+        <li><a class="signup" href="#">Sign Up!</a></li>
+      </ul>
+    </nav>
+    <div class="div1">
+      <h1><em>The global destination for Martial arts discussions</em></h1>
+      <button><a href="forums.html" target="_blank">MMA Forums</a></button>
+    </div>
+    <div class="div2">
+      <h2 class="div-2-heading">Top comment of the day</h2>
+      <button class="top-comment-button">
+        <a href="forums.html" target="_blank">View comment</a>
+      </button>
+      <div class="top-comment">
+        <i
+          style="padding: 25px; font-size: 40px"
+          class="fa-solid fa-quote-left"
+        ></i>
+        <p class="p-div-2">
+          The experience here on MMA forums has been an absolute pleasure and
+          the user interface is very fluid and attractive. Great work from
+          Hemanth-12105835.
+        </p>
+        <i
+          style="position: relative; left: 80%; font-size: 40px"
+          class="fa-solid fa-quote-right"
+        ></i>
+        <p class="p-2-div-2">
+          <em>Good luck<br />Eashwanth-12106096</em>
+        </p>
+      </div>
+    </div>
+    <div class="div3">
+      <h3 class="heading-div-3">Sign Up!</h3>
+      <form action="#" method="get" onsubmit="validate1()">
+        <input type="text" class="ip" id="name" placeholder="Name goes here" />
+        <br /><br />
+        <input type="text" class="ip" id="email-id" placeholder="Email ID" />
+        <br /><br />
+        <input
+          type="password"
+          class="ip"
+          id="password"
+          placeholder="Password"
+        />
+        <br /><br />
+        <input
+          type="password"
+          class="ip"
+          id="confirm-password"
+          placeholder="Confirm Password"
+        />
+        <br /><br />
+        <input type="checkbox" id="t-c" class="t-and-c" />
+        <label>
+          By checking this box you agree to the
+          <em><b>Privacy policy</b></em> and
+          <em><b>Terms of Service</b></em>
+        </label>
+        <br /><br />
+        <input type="submit" class="submit" value="Submit" />
+        <input type="reset" class="reset" value="Reset" />
+      </form>
+    </div>
+    <div class="div-4">
+      <div class="icons">
+        <a href="https://wwww.facebook.com/hemanth-marupudi" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/mrhemanth_" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hemanth-marupudi" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Hemanthsai1234" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+
+      <ul class="footer-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="cse326notes.html" target="_blank">CSE326-Notes</a></li>
+      </ul>
+      <p onclick="footer()" id="made-by">
+        <b>Made by Hemanth Siva Satyasai Marupudi - 12105835</b>
+      </p>
+    </div>
+  </body>
+</html>

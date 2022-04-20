@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <link rel="stylesheet" href="forums.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e7e020a0d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body id="mode">
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    <div class="main-div">
+      <div class="comment-div">
+        <div class="in-comment">
+          <h3 class="comment-title">First Comment</h3>
+          <h5 style="margin-bottom: 5px; margin-top: 2px;">
+            <i style="cursor: default; margin-right: 2px;" class="fa-regular fa-user"></i>
+            <em>Hemanth-12105835</em>
+            <a href="mailto:hemanth.12105835@lpu.in"><i style="color:rgb(6, 108, 116);" class="fa-regular fa-envelope"></i></a>
+          </h5>
+          <hr style="margin-top: 10px;margin-bottom: 15px; color: rgb(6, 108, 116);">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
+            pretium fusce id velit ut tortor pretium viverra. Faucibus pulvinar
+            elementum integer enim neque. Est velit egestas dui id ornare arcu
+            odio ut. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames. Amet luctus venenatis lectus magna fringilla urna.
+            Turpis egestas maecenas pharetra convallis posuere morbi leo.
+            Senectus et netus et malesuada fames ac turpis. Pulvinar elementum
+            integer enim neque volutpat ac tincidunt. Placerat orci nulla
+            pellentesque dignissim. Tortor at risus viverra adipiscing at in
+            tellus.
+          </p>
+          <div class="comment-tools" >
+            <div class="reply" style="float: left; padding-right: 20px">
+              <i onclick="myFunction1(this)" style="font-size: 27px;" class="fa-regular fa-comments"></i> 
+            </div>
+            
+            <div class="like" style="cursor: pointer">
+              <i id="id" onclick="myFunction1(this),likescount()" class="fa-regular fa-thumbs-up" ></i><h6 id="likescount"></h6> 
+            </div>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+      <div class="comment-div-2">
+        <div class="in-comment" id="reply-1-in-comment">
+          <h3 class="comment-title">Second Comment</h3>
+          <h5 style="margin-bottom: 5px; margin-top: 2px;">
+            <i style="cursor: default; margin-right: 2px;" class="fa-regular fa-user"></i>
+            <em>Eashwanth-12106096</em>
+            <a href="mailto:hemanth.12105835@lpu.in"><i style="color:rgb(6, 108, 116);" class="fa-regular fa-envelope"></i></a>
+          </h5>
+          <hr style="margin-top: 10px;margin-bottom: 15px; color: rgb(6, 108, 116);">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+            eos ipsam perspiciatis corrupti qui molestias fugiat autem,
+            veritatis quae facere ducimus voluptates quibusdam reprehenderit
+            dolore sit explicabo libero, iste voluptas?
+          </p>
+          <div class="comment-tools" >
+            <div class="reply" style="float: left; padding-right: 20px">
+              <i onclick="myFunction1(this)" style="font-size: 27px;" class="fa-regular fa-comments"></i> 
+            </div>
+            
+            <div class="like" style="cursor: pointer">
+              <i id="id" onclick="myFunction1(this)" class="fa-regular fa-thumbs-up" ></i>
+            </div>
+          </div>
+        </div>
+        <div class="comment-div-3">
+          <div class="in-comment">
+            <h3 class="comment-title">Third Comment</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur eos ipsam perspiciatis corrupti qui molestias fugiat
+              autem, veritatis quae facere ducimus voluptates quibusdam
+              reprehenderit dolore sit explicabo libero, iste voluptas?
+            </p>
+            <div class="comment-tools">
+              <div class="reply" style="float: left; margin-right: 20px">
+                <i onclick="myFunction1(this)" style="font-size: 27px;" class="fa-regular fa-comments"></i>
+              </div>
+              <div style="cursor: pointer">
+                <i id="id" onclick="myFunction1(this)" class="fa-regular fa-thumbs-up" ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-div-4">
+          <div class="in-comment">
+            <h3 class="comment-title">Third Comment</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur eos ipsam perspiciatis corrupti qui molestias fugiat
+              autem, veritatis quae facere ducimus voluptates quibusdam
+              reprehenderit dolore sit explicabo libero, iste voluptas?
+            </p>
+            <div class="comment-tools">
+              <div class="reply" style="float: left; margin-right: 20px">
+                <i onclick="myFunction1(this)" style="font-size: 27px;" class="fa-regular fa-comments"></i>
+              </div>
+              <div style="cursor: pointer">
+                <i id="id" onclick="myFunction1(this)" class="fa-regular fa-thumbs-up" ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="comment-div-5">
+        
+        <div class="in-comment">
+          <h3 class="comment-title">Third Comment</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Aspernatur eos ipsam perspiciatis corrupti qui molestias fugiat
+            autem, veritatis quae facere ducimus voluptates quibusdam
+            reprehenderit dolore sit explicabo libero, iste voluptas?
+          </p>
+          <div class="comment-tools">
+            <div class="reply" style="float: left; margin-right: 20px">
+              <i onclick="myFunction1(this)" style="font-size: 27px;" class="fa-regular fa-comments"></i>
+            </div>
+            <div style="cursor: pointer">
+              <i id="id" onclick="myFunction1(this)" class="fa-regular fa-thumbs-up" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer">
+
+    </div>
+  
+    <script>
+      function myFunction1(x) {
+        x.classList.toggle("fa-solid");
+        
+      }
+
+      function likescount(){
+        var likes=parseInt(document.getElementById("likescount").likes,10);
+        likes=likes+1;
+        document.getElementById("likescount").likes=likes;
+      }
+    
+      </script>
+  </body>
+</html>
+ 

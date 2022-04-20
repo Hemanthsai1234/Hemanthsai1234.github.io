@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  min-height: 100%;
+}
+
+body {
+  background-color: #8fd6e1;
+  min-height: 100%;
+  padding-bottom: 10px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.main-div {
+  width: 90%;
+  margin: 3rem auto;
+  position: relative;
+  height: auto;
+}
+
+.comment-div {
+  position: relative;
+}
+
+.in-comment {
+  padding: 3px;
+  background-color: rgb(240, 255, 255);
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-right: 7px;
+  box-shadow: 4px 5px 5px 3px rgba(66, 65, 65, 0.545);
+}
+
+.in-comment h3 {
+  margin-bottom: 1rem;
+  font-family: "Courgette", cursive;
+  font-weight: 100;
+  font-size: 25px;
+}
+.in-comment p {
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  line-height: 160%;
+}
+
+.in-comment h5 {
+  padding-bottom: 11px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(156, 156, 156);
+}
+.in-comment em {
+  margin-right: 10px;
+  background-color: grey;
+  vertical-align: middle;
+  border: 3px solid black;
+  border-radius: 17px;
+  color: white;
+  padding: 4px 9px;
+  vertical-align: middle;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+}
+
+.in-comment em:hover {
+  background-color: wheat;
+  color: black;
+  border: 3px solid rgb(6, 108, 116);
+}
+
+.in-comment h5 i {
+  color: rgb(6, 108, 116);
+  vertical-align: middle;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+.comment-tools {
+  font-size: 0.95rem;
+  padding-left: 80%;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  padding-top: 7px;
+}
+
+.like i {
+  padding-left: 12px;
+}
+
+.reply {
+  cursor: pointer;
+}
+
+.reply ion-icon {
+  vertical-align: middle;
+  padding-top: 2px;
+}
+.fa-regular {
+  cursor: pointer;
+  font-size: 29px;
+}
+.comment-div-2 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  float: right;
+  margin-top: 1rem;
+}
+
+.comment-div-3 {
+  position: relative;
+  width: 85%;
+  height: auto;
+  float: right;
+  margin-top: 1rem;
+}
+.comment-div-4 {
+  position: relative;
+  width: 95%;
+  height: auto;
+  float: right;
+  margin-top: 1rem;
+}
+.comment-div-5 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  float: right;
+  margin-top: 2rem;
+}
+
+.bookmark {
+  display: inline;
+  vertical-align: middle;
+}

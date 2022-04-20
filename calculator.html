@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <head>
+    <script>
+      function test() {
+        alert("H");
+      }
+      function add() {
+        var a = parseFloat(document.getElementById("A").value);
+        var b = parseFloat(document.getElementById("B").value);
+        document.getElementById("result").value = a + b;
+        alert("Sum = " + (a + b));
+      }
+      function mul() {
+        var a = parseFloat(document.getElementById("A").value);
+        var b = parseFloat(document.getElementById("B").value);
+        document.getElementById("result").value = a * b;
+        alert("Product = " + (a * b));
+      }
+      function sub() {
+        var a = parseFloat(document.getElementById("A").value);
+        var b = parseFloat(document.getElementById("B").value);
+        document.getElementById("result").value = a - b;
+        alert("Difference = " + (a - b));
+      }
+      function div() {
+        var a = parseFloat(document.getElementById("A").value);
+        var b = parseFloat(document.getElementById("B").value);
+        var c = a / b;
+        document.getElementById("result").value = c.toFixed(2);
+        alert("Division = " + c.toFixed(2));
+      }
+      function assign() {
+        var a=9;
+        var b=5;
+        a+=b;
+        document.getElementById("p").innerHTML+="<br>"+"a+=b"+" is "+a;
+        a-=b;
+        document.getElementById("p").innerHTML+="<br>"+"a-=b"+" is "+a;
+        a*=b;
+        document.getElementById("p").innerHTML+="<br>"+"a*=b"+" is "+a;
+        a/=b;
+        document.getElementById("p").innerHTML+="<br>"+"a/=b"+" is "+a;
+      }
+      function assign1() {
+        var a=6;
+        var b=5;
+        document.getElementById("p1").innerHTML+="<br>"+"a>b"+" is "+ (a>b);
+        document.getElementById("p1").innerHTML+="<br>"+"a<b"+" is "+ (a<b);
+        document.getElementById("p1").innerHTML+="<br>"+"a>=b"+" is "+ (a>=b);
+        document.getElementById("p1").innerHTML+="<br>"+"a<=b"+" is "+ (a<=b);
+        document.getElementById("p1").innerHTML+="<br>"+"a>b"+" is "+ (a>b);
+        document.getElementById("p1").innerHTML+="<br>"+"5=='5'"+" is "+ (5=='5');
+        document.getElementById("p1").innerHTML+="<br>"+"5==='5'"+" is "+ (5==='5');
+        document.getElementById("p1").innerHTML+="<br>"+"5!='5'"+" is "+ (5!='5');
+        document.getElementById("p1").innerHTML+="<br>"+"5!==5'"+" is "+ (5!=='5');
+
+      }
+      function age1() {
+        var a=document.getElementById("age").value;
+        if(isNaN(a))
+        {
+          alert("Invalid");
+        }
+        else
+        {
+          var a=parseInt(a);
+          if(a>0 && a<=110){
+            alert("It's valid one");
+          }
+          else{
+            alert("Invalid");
+          }
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+    <h1>Calculator</h1>
+    <form>
+      <label>Enter A: </label>
+      <input type="number" id="A" required/><br /><br />
+      <label>Enter B: </label>
+      <input type="number" id="B" required/><br /><br />
+      <label>Result : </label>
+      <input type="text" id="result" disabled /><br /><br />
+      <input type="button" value="+" onclick="add()" />
+      &nbsp;
+      <input type="button" value="x" onclick="mul()" />
+      &nbsp;
+      <input type="button" value="--" onclick="sub()" />
+      &nbsp;
+      <input type="button" value="÷" onclick="div()" />
+      &nbsp;
+      <input type="reset" value="Reset" />
+    </form>
+    <hr>
+    <p id="p">Lets suppose we have two variable a=9 and b=5</p>
+    <p onclick="assign()">Click here</p>
+    <p id="p1" onclick="assign1()">Conditional operators a=6 and b=5</p>
+    <hr>
+    
+    <h3 onclick="test()">This is to check if onclick can be used with heading tags.</h3>
+  </center>
+  <form>
+    <center>
+      Enter Age:
+      <input type="text" placeholder="Age" id="age" /><br /><br />
+      <input type="submit" value="Submit"  onclick="age1()" />
+    </center>
+  </form>
+  </body>
+</html>
